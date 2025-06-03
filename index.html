@@ -5,66 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MartiansCoin - $MTC</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: white;
-      text-align: center;
-    }
-    header {
-      background-image: url('martianscoin-banner-final.png');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header h1 {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 1rem 2rem;
-      border-radius: 12px;
-      font-size: 2.5rem;
-    }
-    .content {
-      padding: 2rem;
-    }
-    .content h2 {
-      color: #ffcc00;
-      margin-bottom: 2rem;
-    }
-    .links a {
-      color: #00ffcc;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1.1rem;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-    .logo {
-      width: 100px;
-      height: auto;
-      margin: 2rem auto;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>MartiansCoin ($MTC)</h1>
+<body class="bg-black text-white font-sans">
+  <header class="relative h-96 bg-cover bg-center flex items-center justify-center" style="background-image: url('martianscoin-banner-final.png');">
+    <h1 class="text-4xl md:text-5xl font-bold bg-black bg-opacity-60 px-6 py-4 rounded-xl shadow-lg">
+      MartiansCoin ($MTC)
+    </h1>
   </header>
 
-  <div class="content">
-    <img class="logo" src="https://raw.githubusercontent.com/YATI3/martianscoin.com/main/logo.png" alt="MartiansCoin logo" />
-    <h2>The real currency of Mars – sorry Elon, you signed nothing 👽</h2>
+  <main class="max-w-4xl mx-auto p-6 text-center">
+    <img src="logo.png" alt="MartiansCoin logo" class="w-28 mx-auto my-8" />
 
-    <div class="links">
-      <a href="https://bscscan.com/token/0xfB7B9E74dB95BF0f7b81580A5edDba408F88EA5c" target="_blank">🔗 BscScan</a>
-      <a href="https://twitter.com/CoinMartians" target="_blank">🐦 Twitter</a>
-      <a href="https://martianscoin.com" target="_blank">🌐 martianscoin.com</a>
+    <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-6">
+      The real currency of Mars – sorry Elon, you signed nothing 👽
+    </h2>
+
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-lg">
+      <a href="https://bscscan.com/token/0xfB7B9E74dB95BF0f7b81580A5edDba408F88EA5c" target="_blank" class="hover:underline text-cyan-400">🔗 BscScan</a>
+      <a href="https://twitter.com/CoinMartians" target="_blank" class="hover:underline text-cyan-400">🐦 Twitter</a>
+      <a href="https://martianscoin.com" target="_blank" class="hover:underline text-cyan-400">🌐 martianscoin.com</a>
     </div>
-  </div>
+  </main>
 </body>
 </html>
